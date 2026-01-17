@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: melhorai-app
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Configure as variáveis de ambiente VITE_* abaixo conforme necessário
+      # - key: VITE_API_URL
+      #   value: https://sua-api-url.com
+      # - key: VITE_DEBUG_API_URL
+      #   value: https://sua-debug-api-url.com

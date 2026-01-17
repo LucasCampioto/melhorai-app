@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="128" fill="url(#gradient8)"/>
+  <!-- Linhas convergindo para o centro -->
+  <path d="M128 128L200 200" stroke="white" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+  <path d="M256 80L256 200" stroke="white" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+  <path d="M384 128L312 200" stroke="white" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+  <path d="M128 384L200 312" stroke="white" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+  <path d="M256 432L256 312" stroke="white" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+  <path d="M384 384L312 312" stroke="white" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+  <path d="M80 256L200 256" stroke="white" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+  <path d="M432 256L312 256" stroke="white" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+  <!-- Círculo central de foco -->
+  <circle cx="256" cy="256" r="80" fill="white" opacity="0.2"/>
+  <circle cx="256" cy="256" r="50" fill="white" opacity="0.9"/>
+  <circle cx="256" cy="256" r="24" fill="url(#gradient8)"/>
+  <defs>
+    <linearGradient id="gradient8" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+</svg>

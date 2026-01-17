@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="128" fill="url(#gradient5)"/>
+  <!-- Feixe de luz -->
+  <path d="M256 80L200 200L256 320L312 200L256 80Z" fill="white" opacity="0.9"/>
+  <path d="M256 120L220 200L256 280L292 200L256 120Z" fill="url(#gradient5)"/>
+  <!-- Círculo de foco -->
+  <circle cx="256" cy="256" r="60" fill="white" opacity="0.2"/>
+  <circle cx="256" cy="256" r="40" fill="white" opacity="0.4"/>
+  <circle cx="256" cy="256" r="20" fill="white" opacity="0.9"/>
+  <!-- Raios -->
+  <line x1="256" y1="200" x2="256" y2="240" stroke="white" stroke-width="8" opacity="0.6"/>
+  <line x1="236" y1="220" x2="220" y2="240" stroke="white" stroke-width="6" opacity="0.5"/>
+  <line x1="276" y1="220" x2="292" y2="240" stroke="white" stroke-width="6" opacity="0.5"/>
+  <defs>
+    <linearGradient id="gradient5" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+</svg>

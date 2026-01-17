@@ -1,0 +1,21 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="128" fill="url(#gradient3)"/>
+  <!-- Olho estilizado -->
+  <ellipse cx="256" cy="256" rx="160" ry="100" fill="white" opacity="0.2"/>
+  <ellipse cx="256" cy="256" rx="120" ry="80" fill="white" opacity="0.3"/>
+  <!-- Íris com padrão de circuito -->
+  <circle cx="256" cy="256" r="80" fill="white" opacity="0.9"/>
+  <circle cx="256" cy="256" r="50" fill="url(#gradient3)"/>
+  <circle cx="256" cy="256" r="30" fill="white" opacity="0.3"/>
+  <!-- Reflexo -->
+  <circle cx="240" cy="240" r="12" fill="white" opacity="0.8"/>
+  <!-- Linhas de foco -->
+  <path d="M96 200L180 240" stroke="white" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+  <path d="M416 200L332 240" stroke="white" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+  <defs>
+    <linearGradient id="gradient3" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+</svg>

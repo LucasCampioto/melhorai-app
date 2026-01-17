@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocAI - Preview de Favicons</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #0EA5E9 0%, #06B6D4 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: white;
+    }
+    
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      font-weight: 700;
+    }
+    
+    .subtitle {
+      text-align: center;
+      opacity: 0.9;
+      margin-bottom: 50px;
+      font-size: 1.2rem;
+    }
+    
+    .brand-name {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    
+    .favicon-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .favicon-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+    }
+    
+    .favicon-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+    
+    .preview-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    
+    .size-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+    
+    .size-label {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      font-weight: 500;
+    }
+    
+    .favicon-preview {
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      background: white;
+      padding: 8px;
+    }
+    
+    .sizes-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .info-section {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      margin-top: 40px;
+    }
+    
+    .info-section h2 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+    
+    .info-section ul {
+      list-style: none;
+      line-height: 2;
+    }
+    
+    .info-section li {
+      padding-left: 25px;
+      position: relative;
+    }
+    
+    .info-section li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #06B6D4;
+      font-weight: bold;
+    }
+    
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid white;
+      border-radius: 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .download-btn:hover {
+      background: white;
+      color: #0EA5E9;
+    }
+    
+    .concept-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      font-size: 0.75rem;
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 FocAI</h1>
+    <div class="brand-name">Favicons Minimalistas</div>
+    <p class="subtitle">12 designs minimalistas focados apenas na letra F</p>
+    
+    <div class="grid">
+      <!-- Favicon 1: F Bold -->
+      <div class="favicon-card">
+        <div class="favicon-name">1. F Bold</div>
+        <div class="concept-badge">Negrito</div>
+        <div class="preview-container">
+          <div class="sizes-row">
+            <div class="size-group">
+              <div class="size-label">16x16</div>
+              <img src="favicons/favicon-1-f-bold.svg" class="favicon-preview" style="width: 16px; height: 16px;" alt="Favicon 1">
+            </div>
+            <div class="size-group">
+              <div class="size-label">32x32</div>
+              <img src="favicons/favicon-1-f-bold.svg" class="favicon-preview" style="width: 32px; height: 32px;" alt="Favicon 1">
+            </div>
+            <div class="size-group">
+              <div class="size-label">64x64</div>
+              <img src="favicons/favicon-1-f-bold.svg" class="favicon-preview" style="width: 64px; height: 64px;" alt="Favicon 1">
+            </div>
+            <div class="size-group">
+              <div class="size-label">128x128</div>
+              <img src="favicons/favicon-1-f-bold.svg" class="favicon-preview" style="width: 128px; height: 128px;" alt="Favicon 1">
+            </div>
+          </div>
+          <a href="favicons/favicon-1-f-bold.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+
+      <!-- Favicon 2: F Outline -->
+      <div class="favicon-card">
+        <div class="favicon-name">2. F Outline</div>
+        <div class="concept-badge">Contorno</div>
+        <div class="preview-container">
+          <div class="sizes-row">
+            <div class="size-group">
+              <div class="size-label">16x16</div>
+              <img src="favicons/favicon-2-f-outline.svg" class="favicon-preview" style="width: 16px; height: 16px;" alt="Favicon 2">
+            </div>
+            <div class="size-group">
+              <div class="size-label">32x32</div>
+              <img src="favicons/favicon-2-f-outline.svg" class="favicon-preview" style="width: 32px; height: 32px;" alt="Favicon 2">
+            </div>
+            <div class="size-group">
+              <div class="size-label">64x64</div>
+              <img src="favicons/favicon-2-f-outline.svg" class="favicon-preview" style="width: 64px; height: 64px;" alt="Favicon 2">
+            </div>
+            <div class="size-group">
+              <div class="size-label">128x128</div>
+              <img src="favicons/favicon-2-f-outline.svg" class="favicon-preview" style="width: 128px; height: 128px;" alt="Favicon 2">
+            </div>
+          </div>
+          <a href="favicons/favicon-2-f-outline.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+
+      <!-- Favicon 3: F Circle -->
+      <div class="favicon-card">
+        <div class="favicon-name">3. F Circle</div>
+        <div class="concept-badge">Com Círculo</div>
+        <div class="preview-container">
+          <div class="sizes-row">
+            <div class="size-group">
+              <div class="size-label">16x16</div>
+              <img src="favicons/favicon-3-f-circle.svg" class="favicon-preview" style="width: 16px; height: 16px;" alt="Favicon 3">
+            </div>
+            <div class="size-group">
+              <div class="size-label">32x32</div>
+              <img src="favicons/favicon-3-f-circle.svg" class="favicon-preview" style="width: 32px; height: 32px;" alt="Favicon 3">
+            </div>
+            <div class="size-group">
+              <div class="size-label">64x64</div>
+              <img src="favicons/favicon-3-f-circle.svg" class="favicon-preview" style="width: 64px; height: 64px;" alt="Favicon 3">
+            </div>
+            <div class="size-group">
+              <div class="size-label">128x128</div>
+              <img src="favicons/favicon-3-f-circle.svg" class="favicon-preview" style="width: 128px; height: 128px;" alt="Favicon 3">
+            </div>
+          </div>
+          <a href="favicons/favicon-3-f-circle.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+
+      <!-- Favicon 4: F Square -->
+      <div class="favicon-card">
+        <div class="favicon-name">4. F Square</div>
+        <div class="concept-badge">Com Quadrado</div>
+        <div class="preview-container">
+          <div class="sizes-row">
+            <div class="size-group">
+              <div class="size-label">16x16</div>
+              <img src="favicons/favicon-4-f-square.svg" class="favicon-preview" style="width: 16px; height: 16px;" alt="Favicon 4">
+            </div>
+            <div class="size-group">
+              <div class="size-label">32x32</div>
+              <img src="favicons/favicon-4-f-square.svg" class="favicon-preview" style="width: 32px; height: 32px;" alt="Favicon 4">
+            </div>
+            <div class="size-group">
+              <div class="size-label">64x64</div>
+              <img src="favicons/favicon-4-f-square.svg" class="favicon-preview" style="width: 64px; height: 64px;" alt="Favicon 4">
+            </div>
+            <div class="size-group">
+              <div class="size-label">128x128</div>
+              <img src="favicons/favicon-4-f-square.svg" class="favicon-preview" style="width: 128px; height: 128px;" alt="Favicon 4">
+            </div>
+          </div>
+          <a href="favicons/favicon-4-f-square.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+
+      <!-- Favicon 5: F Gradient -->
+      <div class="favicon-card">
+        <div class="favicon-name">5. F Gradient</div>
+        <div class="concept-badge">Gradiente</div>
+        <div class="preview-container">
+          <div class="sizes-row">
+            <div class="size-group">
+              <div class="size-label">16x16</div>
+              <img src="favicons/favicon-5-f-gradient.svg" class="favicon-preview" style="width: 16px; height: 16px;" alt="Favicon 5">
+            </div>
+            <div class="size-group">
+              <div class="size-label">32x32</div>
+              <img src="favicons/favicon-5-f-gradient.svg" class="favicon-preview" style="width: 32px; height: 32px;" alt="Favicon 5">
+            </div>
+            <div class="size-group">
+              <div class="size-label">64x64</div>
+              <img src="favicons/favicon-5-f-gradient.svg" class="favicon-preview" style="width: 64px; height: 64px;" alt="Favicon 5">
+            </div>
+            <div class="size-group">
+              <div class="size-label">128x128</div>
+              <img src="favicons/favicon-5-f-gradient.svg" class="favicon-preview" style="width: 128px; height: 128px;" alt="Favicon 5">
+            </div>
+          </div>
+          <a href="favicons/favicon-5-f-gradient.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+
+      <!-- Favicon 6: F Thin -->
+      <div class="favicon-card">
+        <div class="favicon-name">6. F Thin</div>
+        <div class="concept-badge">Fino</div>
+        <div class="preview-container">
+          <div class="sizes-row">
+            <div class="size-group">
+              <div class="size-label">16x16</div>
+              <img src="favicons/favicon-6-f-thin.svg" class="favicon-preview" style="width: 16px; height: 16px;" alt="Favicon 6">
+            </div>
+            <div class="size-group">
+              <div class="size-label">32x32</div>
+              <img src="favicons/favicon-6-f-thin.svg" class="favicon-preview" style="width: 32px; height: 32px;" alt="Favicon 6">
+            </div>
+            <div class="size-group">
+              <div class="size-label">64x64</div>
+              <img src="favicons/favicon-6-f-thin.svg" class="favicon-preview" style="width: 64px; height: 64px;" alt="Favicon 6">
+            </div>
+            <div class="size-group">
+              <div class="size-label">128x128</div>
+              <img src="favicons/favicon-6-f-thin.svg" class="favicon-preview" style="width: 128px; height: 128px;" alt="Favicon 6">
+            </div>
+          </div>
+          <a href="favicons/favicon-6-f-thin.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+
+      <!-- Favicon 7: F Rounded -->
+      <div class="favicon-card">
+        <div class="favicon-name">7. F Rounded</div>
+        <div class="concept-badge">Arredondado</div>
+        <div class="preview-container">
+          <div class="sizes-row">
+            <div class="size-group">
+              <div class="size-label">16x16</div>
+              <img src="favicons/favicon-7-f-rounded.svg" class="favicon-preview" style="width: 16px; height: 16px;" alt="Favicon 7">
+            </div>
+            <div class="size-group">
+              <div class="size-label">32x32</div>
+              <img src="favicons/favicon-7-f-rounded.svg" class="favicon-preview" style="width: 32px; height: 32px;" alt="Favicon 7">
+            </div>
+            <div class="size-group">
+              <div class="size-label">64x64</div>
+              <img src="favicons/favicon-7-f-rounded.svg" class="favicon-preview" style="width: 64px; height: 64px;" alt="Favicon 7">
+            </div>
+            <div class="size-group">
+              <div class="size-label">128x128</div>
+              <img src="favicons/favicon-7-f-rounded.svg" class="favicon-preview" style="width: 128px; height: 128px;" alt="Favicon 7">
+            </div>
+          </div>
+          <a href="favicons/favicon-7-f-rounded.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+
+      <!-- Favicon 8: F Dot -->
+      <div class="favicon-card">
+        <div class="favicon-name">8. F Dot</div>
+        <div class="concept-badge">Com Ponto</div>
+        <div class="preview-container">
+          <div class="sizes-row">
+            <div class="size-group">
+              <div class="size-label">16x16</div>
+              <img src="favicons/favicon-8-f-dot.svg" class="favicon-preview" style="width: 16px; height: 16px;" alt="Favicon 8">
+            </div>
+            <div class="size-group">
+              <div class="size-label">32x32</div>
+              <img src="favicons/favicon-8-f-dot.svg" class="favicon-preview" style="width: 32px; height: 32px;" alt="Favicon 8">
+            </div>
+            <div class="size-group">
+              <div class="size-label">64x64</div>
+              <img src="favicons/favicon-8-f-dot.svg" class="favicon-preview" style="width: 64px; height: 64px;" alt="Favicon 8">
+            </div>
+            <div class="size-group">
+              <div class="size-label">128x128</div>
+              <img src="favicons/favicon-8-f-dot.svg" class="favicon-preview" style="width: 128px; height: 128px;" alt="Favicon 8">
+            </div>
+          </div>
+          <a href="favicons/favicon-8-f-dot.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+
+      <!-- Favicon 9: F Corner -->
+      <div class="favicon-card">
+        <div class="favicon-name">9. F Corner</div>
+        <div class="concept-badge">Canto Superior</div>
+        <div class="preview-container">
+          <div class="sizes-row">
+            <div class="size-group">
+              <div class="size-label">16x16</div>
+              <img src="favicons/favicon-9-f-corner.svg" class="favicon-preview" style="width: 16px; height: 16px;" alt="Favicon 9">
+            </div>
+            <div class="size-group">
+              <div class="size-label">32x32</div>
+              <img src="favicons/favicon-9-f-corner.svg" class="favicon-preview" style="width: 32px; height: 32px;" alt="Favicon 9">
+            </div>
+            <div class="size-group">
+              <div class="size-label">64x64</div>
+              <img src="favicons/favicon-9-f-corner.svg" class="favicon-preview" style="width: 64px; height: 64px;" alt="Favicon 9">
+            </div>
+            <div class="size-group">
+              <div class="size-label">128x128</div>
+              <img src="favicons/favicon-9-f-corner.svg" class="favicon-preview" style="width: 128px; height: 128px;" alt="Favicon 9">
+            </div>
+          </div>
+          <a href="favicons/favicon-9-f-corner.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+
+      <!-- Favicon 10: F Center -->
+      <div class="favicon-card">
+        <div class="favicon-name">10. F Center</div>
+        <div class="concept-badge">Centralizado</div>
+        <div class="preview-container">
+          <div class="sizes-row">
+            <div class="size-group">
+              <div class="size-label">16x16</div>
+              <img src="favicons/favicon-10-f-center.svg" class="favicon-preview" style="width: 16px; height: 16px;" alt="Favicon 10">
+            </div>
+            <div class="size-group">
+              <div class="size-label">32x32</div>
+              <img src="favicons/favicon-10-f-center.svg" class="favicon-preview" style="width: 32px; height: 32px;" alt="Favicon 10">
+            </div>
+            <div class="size-group">
+              <div class="size-label">64x64</div>
+              <img src="favicons/favicon-10-f-center.svg" class="favicon-preview" style="width: 64px; height: 64px;" alt="Favicon 10">
+            </div>
+            <div class="size-group">
+              <div class="size-label">128x128</div>
+              <img src="favicons/favicon-10-f-center.svg" class="favicon-preview" style="width: 128px; height: 128px;" alt="Favicon 10">
+            </div>
+          </div>
+          <a href="favicons/favicon-10-f-center.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+
+      <!-- Favicon 11: F Serif -->
+      <div class="favicon-card">
+        <div class="favicon-name">11. F Serif</div>
+        <div class="concept-badge">Com Serifa</div>
+        <div class="preview-container">
+          <div class="sizes-row">
+            <div class="size-group">
+              <div class="size-label">16x16</div>
+              <img src="favicons/favicon-11-f-serif.svg" class="favicon-preview" style="width: 16px; height: 16px;" alt="Favicon 11">
+            </div>
+            <div class="size-group">
+              <div class="size-label">32x32</div>
+              <img src="favicons/favicon-11-f-serif.svg" class="favicon-preview" style="width: 32px; height: 32px;" alt="Favicon 11">
+            </div>
+            <div class="size-group">
+              <div class="size-label">64x64</div>
+              <img src="favicons/favicon-11-f-serif.svg" class="favicon-preview" style="width: 64px; height: 64px;" alt="Favicon 11">
+            </div>
+            <div class="size-group">
+              <div class="size-label">128x128</div>
+              <img src="favicons/favicon-11-f-serif.svg" class="favicon-preview" style="width: 128px; height: 128px;" alt="Favicon 11">
+            </div>
+          </div>
+          <a href="favicons/favicon-11-f-serif.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+
+      <!-- Favicon 12: F Monospace -->
+      <div class="favicon-card">
+        <div class="favicon-name">12. F Monospace</div>
+        <div class="concept-badge">Monospace</div>
+        <div class="preview-container">
+          <div class="sizes-row">
+            <div class="size-group">
+              <div class="size-label">16x16</div>
+              <img src="favicons/favicon-12-f-monospace.svg" class="favicon-preview" style="width: 16px; height: 16px;" alt="Favicon 12">
+            </div>
+            <div class="size-group">
+              <div class="size-label">32x32</div>
+              <img src="favicons/favicon-12-f-monospace.svg" class="favicon-preview" style="width: 32px; height: 32px;" alt="Favicon 12">
+            </div>
+            <div class="size-group">
+              <div class="size-label">64x64</div>
+              <img src="favicons/favicon-12-f-monospace.svg" class="favicon-preview" style="width: 64px; height: 64px;" alt="Favicon 12">
+            </div>
+            <div class="size-group">
+              <div class="size-label">128x128</div>
+              <img src="favicons/favicon-12-f-monospace.svg" class="favicon-preview" style="width: 128px; height: 128px;" alt="Favicon 12">
+            </div>
+          </div>
+          <a href="favicons/favicon-12-f-monospace.svg" download class="download-btn">Download SVG</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-section">
+      <h2>📋 Como usar os favicons</h2>
+      <ul>
+        <li>Todos os ícones são minimalistas, focados apenas na letra F</li>
+        <li>Designs em formato SVG (escalável e nítido em qualquer tamanho)</li>
+        <li>Escolha o estilo que melhor representa a identidade do FocAI</li>
+        <li>Para converter SVG para outros formatos, use ferramentas como:
+          <ul style="margin-top: 10px; padding-left: 20px;">
+            <li>RealFaviconGenerator.net</li>
+            <li>Favicon.io</li>
+            <li>CloudConvert.com</li>
+          </ul>
+        </li>
+        <li>Formatos necessários: ICO, PNG (16x16, 32x32, 180x180, 192x192, 512x512)</li>
+        <li>Após escolher, atualize o arquivo index.html com as referências corretas</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
