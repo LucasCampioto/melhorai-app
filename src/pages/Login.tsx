@@ -80,7 +80,7 @@ const Login = () => {
             <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-glow">
               <span className="text-white font-display font-bold text-2xl">R</span>
             </div>
-            <span className="font-display font-bold text-2xl">Routine AI</span>
+            <span className="font-display font-bold text-2xl">Melhora.AI</span>
           </div>
 
           {/* Header */}

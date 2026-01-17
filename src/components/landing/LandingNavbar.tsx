@@ -35,7 +35,7 @@ const LandingNavbar = () => {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-glow">
               <span className="text-white font-display font-bold text-xl">R</span>
             </div>
-            <span className="font-display font-bold text-xl hidden sm:block">Routine AI</span>
+            <span className="font-display font-bold text-xl hidden sm:block">Melhora.AI</span>
           </motion.div>
 
           {/* Desktop Navigation */}

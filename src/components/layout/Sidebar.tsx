@@ -90,7 +90,7 @@ export function Sidebar({ isCollapsed, onToggle }: SidebarProps) {
                     transition={{ duration: 0.2 }}
                     className="font-display text-xl font-bold gradient-text whitespace-nowrap overflow-hidden"
                   >
-                    Foc.ai
+                    Melhor.ai
                   </motion.span>
                 </AnimatePresence>
               </Link>

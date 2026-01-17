@@ -120,7 +120,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Routine AI. Todos os direitos reservados.
+            © {currentYear} Melhor.AI. Todos os direitos reservados.
           </p>
           <p className="text-muted-foreground text-sm">
             Feito com 💙 para transformar rotinas
